@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500&subset=cyrillic,cyrillic-ext,latin-ext');
+
+html, body {
+    min-height: 100vh;
+}
+
+body {
+    background: url("image/background.png") no-repeat fixed;
+    background-size: cover;
+}
+
+.overlay {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.blocks-wrapper {
+    margin-bottom: 20px;
+    font-size: 0;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+
+.wrapper-registration-form {
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: 10% auto;
+    width: 446px;
+    min-height: 336px;
+    background: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* BUTTON - TOP */
+
+.btn-cancel, .btn-cancel:hover {
+    position: absolute;
+    top: -22px;
+    left: 480px;
+    width: 20px;
+    height: 5px;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.cross-cancel::before, .cross-cancel::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: #ffffff;
+    width: 20px;
+    height: 4px;
+}
+
+.cross-cancel::before {
+    transform: rotate(45deg);
+}
+
+.cross-cancel::after {
+    transform: rotate(-45deg);
+}
+
+.cross-cancel:hover::before, .cross-cancel:hover::after {
+    background: #726dc7;
+}
+
+
+/* HEADING */
+
+.heading-form {
+    padding: 3px 0 0 7px;
+    text-align: center;
+    font-size: 23px;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+}
+
+.registration-form {
+    margin: 23px 3px 0 1px;
+}
+
+.input-field {
+    display: inline-block;
+    width: 100px;
+    vertical-align: middle;
+    word-break: break-all;
+    font-size: 20px;
+
+}
+
+.mail-name-location {
+    text-align: right;
+}
+
+/* ENTRY FIELDS*/
+
+.entry-field {
+    margin-left: 5px;
+    border: 1px solid #e2e2e2;
+    border-radius: 7px;
+    width: 280px;
+    height: 36px;
+    padding-left: 40px;
+    font-size: 17px;
+    font-style: italic;
+}
+
+.entry-field:focus {
+    border: 1px solid #787878;
+    outline: none;
+    font-style: normal;
+}
+
+.entry-field:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+
+/* SMALL ICONS - ENTRY FIELD*/
+
+.wrapper-entry-fields {
+    position: relative;
+}
+
+.wrapper-entry-fields::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.wrapper-email-field::before {
+    background-image: url("image/mail-icon.png");
+}
+
+.wrapper-name-field::before {
+    background-image: url("image/name-icon.png");
+}
+
+.wrapper-password-field::before {
+    background-image: url("image/pass-icon.png");
+}
+
+/* BUTTONS */
+
+.btn-submit {
+    margin: 12px 0 0 137px;
+    border: none;
+    border-radius: 5px;
+    min-width: 163px;
+    max-width: 300px;
+    height: 52px;
+    background: #605ca8;
+    color: #ffffff;
+    font-size: 18px;
+    outline: none;
+}
+
+.btn-submit:hover {
+    background: #726dc8;
+}
+
+.btn-submit:disabled {
+    background: #cccccc;
+}
+
+
+.btn-reset {
+    display: block;
+    margin: 15px 0 0 180px;
+    font-size: 18px;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    color: #535353;
+    outline: none;
+}
+
+
+
+
+
+

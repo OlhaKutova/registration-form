@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="short icon" href="image/icon.png">
+</head>
+<body>
+<div class="overlay">
+    <dialog open="open" class="wrapper-registration-form">
+        <button class="btn btn-cancel">
+            <span class="cross-cancel"></span>
+        </button>
+        <h2 class="heading-form">REGISTRATION</h2>
+
+        <form class="registration-form" action="#" method="post">
+
+            <div class="blocks-wrapper">
+                <label for="email-field" class="input-field mail-name-location">E mail:</label>
+                <span class="wrapper-entry-fields wrapper-email-field">
+                <input type="email" class="entry-field" name="email-form" id="email-field"
+                       placeholder="Enter your E-mail here" required>
+            </span>
+            </div>
+
+            <div class="blocks-wrapper">
+                <label for="name-field" class="input-field mail-name-location">Name:</label>
+                <span class="wrapper-entry-fields wrapper-name-field">
+                <input type="text" class="entry-field" name="name-form" id="name-field"
+                       placeholder="Enter your name here" required>
+                    </span>
+            </div>
+
+            <div class="blocks-wrapper">
+                <label for="password-field" class="input-field">Password:</label>
+                <span class="wrapper-entry-fields wrapper-password-field">
+                <input type="password" class="entry-field" name="password-form" id="password-field"
+                       placeholder="Enter your password here" required>
+            </span>
+            </div>
+
+            <button class="btn btn-submit" >SUBMIT</button>
+
+            <button type="reset" class="btn btn-reset">RESET</button>
+
+        </form>
+    </dialog>
+</div>
+</body>
+</html>
